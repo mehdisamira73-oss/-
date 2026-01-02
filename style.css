@@ -12,18 +12,9 @@ header {
     padding: 20px;
 }
 
-.hero {
-    background: linear-gradient(to right, #c8102e, #000);
-    color: white;
-    padding: 60px 20px;
-}
-nav {
-    margin-top: 10px;
-}
-
 nav a {
     color: white;
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -31,99 +22,20 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    background: white;
-    color: #c8102e;
-    padding: 12px 30px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-}
-.title {
-    margin: 30px;
-    font-size: 28px;
-    color: #c8102e;
-}
 
-table {
-    width: 80%;
-    margin: auto;
-    border-collapse: collapse;
-    background: white;
-}
-
-th, td {
-    padding: 15px;
-    border: 1px solid #ddd;
-}
-
-th {
-    background: #c8102e;
-    color: white;
-}
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    background: white;
-    color: #c8102e;
-    padding: 12px 30px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-}
-form {
-    max-width: 400px;
-    margin: auto;
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-input, select, button {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    font-size: 16px;
-}
-
-button {
-    background: #c8102e;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-button:hover {
-    opacity: 0.9;
-}
-.contact-box {
-    background: white;
-    width: 80%;
+/* Slider */
+.hero {
+    position: relative;
     margin: 20px auto;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    font-size: 18px;
 }
 
-textarea {
-    width: 100%;
-    height: 100px;
-    padding: 12px;
-    margin: 10px 0;
-    font-size: 16px;
-}
 .slider {
     position: relative;
-    width: 100%;
-    height: 400px;
+    width: 90%;
+    height: 450px;
     overflow: hidden;
     border-radius: 15px;
-    margin: 20px auto;
+    margin: auto;
 }
 
 .slide {
@@ -145,9 +57,21 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    text-align: center;
-    text-shadow: 0 0 10px black;
+    text-shadow: 0 0 15px black;
 }
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: white;
+    color: #c8102e;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* الوجهات المغربية */
 .destinations {
     padding: 40px 20px;
     text-align: center;
@@ -157,7 +81,7 @@ textarea {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     margin-top: 20px;
 }
 
@@ -166,13 +90,18 @@ textarea {
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    width: 150px;
+    width: 160px;
     text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
     width: 80px;
     height: 80px;
-    object-fit: contain;
+    object-fit: cover;
     margin-bottom: 10px;
 }
